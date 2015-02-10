@@ -1,0 +1,28 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+  require_chef_omnibus: false
+
+platforms:
+  - name: ubuntu-14.04
+    driver:
+        box: pingworks_ubuntu-14.04_chef-11.16.4-1
+        box_url: http://vagrant.pingworks.net/pingworks_ubuntu-14.04_chef-11.16.4-1.box
+        network:
+        - ["forwarded_port", { guest: 3000, host: 13000 }]
+        - ["forwarded_port", { guest: 80, host: 18080 }]
+
+suites:
+  - name: default
+    run_list:
+      - recipe[ror4tbs::develop]
+      - recipe[test-helper::default]
+    attributes: {
+      ror4tbs: {
+        app_name: 'ror4tbs-test',
+        app_basedir: '/home/vagrant'
+      }
+    }

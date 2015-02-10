@@ -1,0 +1,7 @@
+Berksfile.lock
+.idea
+.vagrant
+.kitchen/
+.kitchen.yml.local
+*.sublime-project
+*.sublime-workspace

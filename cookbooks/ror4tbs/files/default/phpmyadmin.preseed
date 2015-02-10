@@ -1,0 +1,28 @@
+phpmyadmin	phpmyadmin/password-confirm	password
+phpmyadmin	phpmyadmin/mysql/admin-pass
+phpmyadmin	phpmyadmin/mysql/app-pass	password
+phpmyadmin	phpmyadmin/app-password-confirm	password
+phpmyadmin	phpmyadmin/setup-password	password
+phpmyadmin	phpmyadmin/dbconfig-upgrade	boolean	true
+phpmyadmin	phpmyadmin/setup-username	string	admin
+phpmyadmin	phpmyadmin/dbconfig-remove	boolean
+phpmyadmin	phpmyadmin/mysql/method	select	unix socket
+phpmyadmin	phpmyadmin/dbconfig-reinstall	boolean	false
+phpmyadmin	phpmyadmin/internal/reconfiguring	boolean	false
+phpmyadmin	phpmyadmin/mysql/admin-user	string	root
+phpmyadmin	phpmyadmin/upgrade-error	select	abort
+phpmyadmin	phpmyadmin/missing-db-package-error	select	abort
+phpmyadmin	phpmyadmin/remote/port	string
+phpmyadmin	phpmyadmin/internal/skip-preseed	boolean	false
+phpmyadmin	phpmyadmin/purge	boolean	false
+phpmyadmin	phpmyadmin/remove-error	select	abort
+phpmyadmin	phpmyadmin/reconfigure-webserver	multiselect	apache2
+phpmyadmin	phpmyadmin/install-error	select	abort
+phpmyadmin	phpmyadmin/db/dbname	string	phpmyadmin
+phpmyadmin	phpmyadmin/upgrade-backup	boolean	true
+phpmyadmin	phpmyadmin/remote/host	select
+phpmyadmin	phpmyadmin/remote/newhost	string
+phpmyadmin	phpmyadmin/passwords-do-not-match	error
+phpmyadmin	phpmyadmin/dbconfig-install	boolean	true
+phpmyadmin	phpmyadmin/database-type	select	mysql
+phpmyadmin	phpmyadmin/db/app-user	string	phpmyadmin
