@@ -8,7 +8,7 @@ end
 
 $app_name = \
   (settings.nil? || settings.empty? ) \
-  ? "ror4tbs"
+  ? "grapeapi"
   : settings['app_name']
 
 # Vagrantfile API/syntax version. Don't touch unless you know what you're doing!
@@ -77,7 +77,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # information on available options.
 
   # The path to the Berksfile to use with Vagrant Berkshelf
-  config.berkshelf.berksfile_path = "./cookbooks/ror4tbs/Berksfile"
+  config.berkshelf.berksfile_path = "./cookbooks/grapeapi/Berksfile"
 
   # Enabling the Berkshelf plugin. To enable this globally, add this configuration
   # option to your ~/.vagrant.d/Vagrantfile file
@@ -100,14 +100,14 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     #chef.log_level = :debug
 
     chef.json = {
-      ror4tbs: {
+      grapeapi: {
         app_basedir: '/vagrant',
         app_name: $app_name,
       }
     }
 
     chef.run_list = [
-      'recipe[ror4tbs::develop]'
+      'recipe[grapeapi::develop]'
     ]
   end
 end

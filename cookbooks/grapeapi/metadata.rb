@@ -1,0 +1,10 @@
+name             'grapeapi'
+maintainer       'Alexander Birk'
+maintainer_email 'birk@pingworks.de'
+license          'All rights reserved'
+description      'Installs/Configures grapeapi Dev Environment & Prod Environment'
+long_description 'Installs/Configures grapeapi Dev Environment & Prod Environment'
+version          '0.1.0'
+
+depends 'apt'
+depends 'apache2'
